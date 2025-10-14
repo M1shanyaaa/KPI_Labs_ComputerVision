@@ -53,7 +53,7 @@ def animate(i):
     # Плавна прозорість
     alpha = (np.sin(i * 0.05) + 1) / 2  # від 0 до 1
     # коли прозорість близька до нуля → телепортуємось
-    if alpha < 0.05:
+    if alpha < 0.01:
         tx, ty, tz = random.uniform(-3, 3), random.uniform(-3, 3), random.uniform(-3, 3)
         current_color = random.choice(
             ["red", "green", "blue", "orange", "purple", "cyan"]
