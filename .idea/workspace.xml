@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e938bc6b-e22e-4129-9f6f-f48d20928803" name="Changes" comment="Lab2">
-      <change afterPath="$PROJECT_DIR$/Lab3/Lab_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/imageKPI.png" afterDir="false" />
+    <list default="true" id="e938bc6b-e22e-4129-9f6f-f48d20928803" name="Changes" comment="Lab3">
+      <change afterPath="$PROJECT_DIR$/Lab4/Bad_photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4/Good_photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4/Lab_4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4/learn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,45 +34,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Im_klastering.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Im_quality enhanc.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Lab2v2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Lab2v3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Lab_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Lab_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Lab_3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.PIL_example.executor&quot;: &quot;Run&quot;,
-    &quot;Python.approximation.executor&quot;: &quot;Run&quot;,
-    &quot;Python.gabor_filter.executor&quot;: &quot;Run&quot;,
-    &quot;Python.im_segment.executor&quot;: &quot;Run&quot;,
-    &quot;Python.image_recognition.executor&quot;: &quot;Run&quot;,
-    &quot;Python.learning.executor&quot;: &quot;Run&quot;,
-    &quot;Python.message.executor&quot;: &quot;Run&quot;,
-    &quot;Python.my_code.executor&quot;: &quot;Run&quot;,
-    &quot;Python.my_code_2D.executor&quot;: &quot;Run&quot;,
-    &quot;Python.my_code_3D.executor&quot;: &quot;Run&quot;,
-    &quot;Python.segment_video.executor&quot;: &quot;Run&quot;,
-    &quot;Python.vektor_circuit.executor&quot;: &quot;Run&quot;,
-    &quot;Python.vektor_circuit_segment.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mishanya/PycharmProjects/ComputerVision_labs/Lab3&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Im_klastering.executor": "Run",
+    "Python.Im_quality enhanc.executor": "Run",
+    "Python.Lab2v2.executor": "Run",
+    "Python.Lab2v3.executor": "Run",
+    "Python.Lab_1.executor": "Run",
+    "Python.Lab_2.executor": "Run",
+    "Python.Lab_3.executor": "Run",
+    "Python.Lab_4.executor": "Run",
+    "Python.PIL_example.executor": "Run",
+    "Python.approximation.executor": "Run",
+    "Python.background_subtraction.executor": "Run",
+    "Python.colorspaces.executor": "Run",
+    "Python.frame_diff.executor": "Run",
+    "Python.gabor_filter.executor": "Run",
+    "Python.im_segment.executor": "Run",
+    "Python.image_descriptor.executor": "Run",
+    "Python.image_recognition.executor": "Run",
+    "Python.learn.executor": "Run",
+    "Python.learning.executor": "Run",
+    "Python.message.executor": "Run",
+    "Python.my_code.executor": "Run",
+    "Python.my_code_2D.executor": "Run",
+    "Python.my_code_3D.executor": "Run",
+    "Python.object_tracking.executor": "Run",
+    "Python.segment_video.executor": "Run",
+    "Python.vektor_circuit.executor": "Run",
+    "Python.vektor_circuit_segment.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Mishanya/PycharmProjects/ComputerVision_labs/Lab3",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Mishanya\PycharmProjects\ComputerVision_labs\Lab3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mishanya\PycharmProjects\ComputerVision_labs\Lab4" />
       <recent name="C:\Users\Mishanya\PycharmProjects\ComputerVision_labs\Lab2" />
       <recent name="C:\Users\Mishanya\PycharmProjects\ComputerVision_labs\Lab_work_2\Lab_work_2\Image_Recognition" />
       <recent name="C:\Users\Mishanya\PycharmProjects\ComputerVision_labs" />
@@ -117,7 +127,8 @@
       <workItem from="1760420502407" duration="18952000" />
       <workItem from="1760598752337" duration="1968000" />
       <workItem from="1760621274122" duration="6483000" />
-      <workItem from="1761311988366" duration="370000" />
+      <workItem from="1761311988366" duration="2877000" />
+      <workItem from="1761558586471" duration="5569000" />
     </task>
     <task id="LOCAL-00001" summary="Lab1-start">
       <option name="closed" value="true" />
@@ -159,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760439673287</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Lab3">
+      <option name="closed" value="true" />
+      <created>1761312753870</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1761312753870</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +201,8 @@
     <MESSAGE value="Lab1.2" />
     <MESSAGE value="Lab1.2.1 (formated)" />
     <MESSAGE value="Lab2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab2" />
+    <MESSAGE value="Lab3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -196,25 +216,32 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ComputerVision_labs$Lab_3.coverage" NAME="Lab_3 Coverage Results" MODIFIED="1760625839392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab3" />
+    <SUITE FILE_PATH="coverage/ComputerVision_labs$Lab_3.coverage" NAME="Lab_3 Coverage Results" MODIFIED="1761312387978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab3" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$Lab2v3.coverage" NAME="Lab2v3 Coverage Results" MODIFIED="1760437130130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab2" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$im_segment.coverage" NAME="im_segment Coverage Results" MODIFIED="1758101270799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab_work_2/Lab_work_2/Image_Processing" />
-    <SUITE FILE_PATH="coverage/ComputerVision_labs$gabor_filter.coverage" NAME="gabor_filter Coverage Results" MODIFIED="1760421425114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab_work_2/Lab_work_2/Image_Vectorization" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$message.coverage" NAME="message Coverage Results" MODIFIED="1760437509350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab2" />
-    <SUITE FILE_PATH="coverage/ComputerVision_labs$Im_quality_enhanc.coverage" NAME="Im_quality enhanc Coverage Results" MODIFIED="1758101187811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab_work_2/Lab_work_2/Image_Processing" />
-    <SUITE FILE_PATH="coverage/ComputerVision_labs$Lab2v2.coverage" NAME="Lab2v2 Coverage Results" MODIFIED="1760437008006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab2" />
-    <SUITE FILE_PATH="coverage/ComputerVision_labs$my_code_2D.coverage" NAME="my_code_2D Coverage Results" MODIFIED="1758095369895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Labs" />
+    <SUITE FILE_PATH="coverage/ComputerVision_labs$frame_diff.coverage" NAME="frame_diff Coverage Results" MODIFIED="1761559966431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab4/Lab_work_4/Lab_work_4/Descriptors_tracking" />
+    <SUITE FILE_PATH="coverage/ComputerVision_labs$background_subtraction.coverage" NAME="background_subtraction Coverage Results" MODIFIED="1761559991999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab4/Lab_work_4/Lab_work_4/Descriptors_tracking" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$approximation.coverage" NAME="approximation Coverage Results" MODIFIED="1760421393069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab_work_2/Lab_work_2/Image_Vectorization" />
-    <SUITE FILE_PATH="coverage/ComputerVision_labs$Lab_2.coverage" NAME="Lab_2 Coverage Results" MODIFIED="1760444087763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab2" />
-    <SUITE FILE_PATH="coverage/ComputerVision_labs$vektor_circuit.coverage" NAME="vektor_circuit Coverage Results" MODIFIED="1760421540873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab_work_2/Lab_work_2/Image_Vectorization" />
+    <SUITE FILE_PATH="coverage/ComputerVision_labs$learn.coverage" NAME="learn Coverage Results" MODIFIED="1761564338113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab4" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$image_recognition.coverage" NAME="image_recognition Coverage Results" MODIFIED="1760421785486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab_work_2/Lab_work_2/Image_Recognition" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$Lab_1.coverage" NAME="Lab_1 Coverage Results" MODIFIED="1756969286338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Labs" />
+    <SUITE FILE_PATH="coverage/ComputerVision_labs$my_code.coverage" NAME="my_code Coverage Results" MODIFIED="1757073404432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Labs" />
+    <SUITE FILE_PATH="coverage/ComputerVision_labs$Lab_4.coverage" NAME="Lab_4 Coverage Results" MODIFIED="1761563178873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab4" />
+    <SUITE FILE_PATH="coverage/ComputerVision_labs$gabor_filter.coverage" NAME="gabor_filter Coverage Results" MODIFIED="1760421425114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab_work_2/Lab_work_2/Image_Vectorization" />
+    <SUITE FILE_PATH="coverage/ComputerVision_labs$Im_quality_enhanc.coverage" NAME="Im_quality enhanc Coverage Results" MODIFIED="1758101187811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab_work_2/Lab_work_2/Image_Processing" />
+    <SUITE FILE_PATH="coverage/ComputerVision_labs$object_tracking.coverage" NAME="object_tracking Coverage Results" MODIFIED="1761561945065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab4/Lab_work_4/Lab_work_4/Descriptors_tracking" />
+    <SUITE FILE_PATH="coverage/ComputerVision_labs$colorspaces.coverage" NAME="colorspaces Coverage Results" MODIFIED="1761559980746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab4/Lab_work_4/Lab_work_4/Descriptors_tracking" />
+    <SUITE FILE_PATH="coverage/ComputerVision_labs$image_descriptor.coverage" NAME="image_descriptor Coverage Results" MODIFIED="1761562910245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab4/Lab_work_4/Lab_work_4/Descriptors_tracking" />
+    <SUITE FILE_PATH="coverage/ComputerVision_labs$Lab2v2.coverage" NAME="Lab2v2 Coverage Results" MODIFIED="1760437008006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab2" />
+    <SUITE FILE_PATH="coverage/ComputerVision_labs$my_code_2D.coverage" NAME="my_code_2D Coverage Results" MODIFIED="1758095369895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Labs" />
+    <SUITE FILE_PATH="coverage/ComputerVision_labs$Lab_2.coverage" NAME="Lab_2 Coverage Results" MODIFIED="1760444087763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab2" />
+    <SUITE FILE_PATH="coverage/ComputerVision_labs$vektor_circuit.coverage" NAME="vektor_circuit Coverage Results" MODIFIED="1760421540873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab_work_2/Lab_work_2/Image_Vectorization" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$segment_video.coverage" NAME="segment_video Coverage Results" MODIFIED="1760421468072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab_work_2/Lab_work_2/Image_Vectorization" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$my_code_3D.coverage" NAME="my_code_3D Coverage Results" MODIFIED="1758105085424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab1" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$learning.coverage" NAME="learning Coverage Results" MODIFIED="1757663402563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Labs" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$vektor_circuit_segment.coverage" NAME="vektor_circuit_segment Coverage Results" MODIFIED="1760421586975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab_work_2/Lab_work_2/Image_Vectorization" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$PIL_example.coverage" NAME="PIL_example Coverage Results" MODIFIED="1760355646293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab_work_2/Lab_work_2/Image_Start" />
-    <SUITE FILE_PATH="coverage/ComputerVision_labs$my_code.coverage" NAME="my_code Coverage Results" MODIFIED="1757073404432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Labs" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$Im_klastering.coverage" NAME="Im_klastering Coverage Results" MODIFIED="1758101150444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab_work_2/Lab_work_2/Image_Processing" />
   </component>
 </project>
