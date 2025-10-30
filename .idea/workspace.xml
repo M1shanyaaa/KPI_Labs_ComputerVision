@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e938bc6b-e22e-4129-9f6f-f48d20928803" name="Changes" comment="Lab4">
+    <list default="true" id="e938bc6b-e22e-4129-9f6f-f48d20928803" name="Changes" comment="Lab5">
       <change afterPath="$PROJECT_DIR$/Lab5/After.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Lab5/Before.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Lab5/Lab_5_condition_1.py" afterDir="false" />
@@ -153,7 +153,7 @@
       <workItem from="1761558586471" duration="14388000" />
       <workItem from="1761719265015" duration="12325000" />
       <workItem from="1761757307584" duration="632000" />
-      <workItem from="1761818143791" duration="3475000" />
+      <workItem from="1761818143791" duration="3899000" />
     </task>
     <task id="LOCAL-00001" summary="Lab1-start">
       <option name="closed" value="true" />
@@ -211,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761576704242</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Lab5">
+      <option name="closed" value="true" />
+      <created>1761842665540</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1761842665540</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +244,8 @@
     <MESSAGE value="Lab2" />
     <MESSAGE value="Lab3" />
     <MESSAGE value="Lab4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab4" />
+    <MESSAGE value="Lab5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
