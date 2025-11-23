@@ -1,1 +1,198 @@
-# -------------------------------------------------------------# Lab_6_condition1.py.py# Ієрархічна ідентифікація транспортних засобів у відеопотоці# -------------------------------------------------------------import cv2import numpy as npimport imutilsimport timeimport argparseimport sysclass VehicleDetector:    """    Ієрархічна модель класифікації:    1) Детекція всіх об’єктів (MobileNetSSD)    2) Виділення транспортних (car, bus, motorbike, train)    3) Вторинна класифікація:        - Легкові (car, motorbike)        - Важкі (bus, train)    """    def __init__(self, prototxt_path, model_path, conf_threshold=0.4):        # Моделі класів MobileNetSSD        self.CLASSES = [            "background", "aeroplane", "bicycle", "bird", "boat",            "bottle", "bus", "car", "cat", "chair", "cow",            "diningtable", "dog", "horse", "motorbike", "person",            "pottedplant", "sheep", "sofa", "train", "tvmonitor"        ]        #транспортні        self.VEHICLE_CLASSES = {"car", "bus", "motorbike", "train"}        # уточнена класифікація        self.HEAVY = {"bus", "train"}        self.LIGHT = {"car", "motorbike"}        # Постійні кольори        np.random.seed(42)        self.COLORS = np.random.uniform(0, 255, size=(len(self.CLASSES), 3))        # Завантаження нейромережі        self.net = cv2.dnn.readNetFromCaffe(prototxt_path, model_path)        self.net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)        self.net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)        self.conf_threshold = conf_threshold        self.input_size = (400, 400)    # ----------------------------------------------------------    def classify_level3(self, class_name):        """Підкласифікація транспортних засобів"""        if class_name in self.HEAVY:            return "Heavy vehicle"        if class_name in self.LIGHT:            return "Light vehicle"        return "Vehicle"    # ----------------------------------------------------------    def detect(self, frame):        """Головний метод детекції та ієрархічної класифікації"""        (h, w) = frame.shape[:2]        blob = cv2.dnn.blobFromImage(            cv2.resize(frame, self.input_size),            0.007843, self.input_size, 127.5        )        self.net.setInput(blob)        detections = self.net.forward()        vehicle_count = 0        for i in range(detections.shape[2]):            confidence = detections[0, 0, i, 2]            if confidence < self.conf_threshold:                continue            idx = int(detections[0, 0, i, 1])            class_name = self.CLASSES[idx]            # Тільки транспортні            if class_name not in self.VEHICLE_CLASSES:                continue            vehicle_count += 1            vehicle_type = self.classify_level3(class_name)            box = detections[0, 0, i, 3:7] * np.array([w, h, w, h])            (startX, startY, endX, endY) = box.astype("int")            label = f"{vehicle_type} ({class_name}) {confidence * 100:.1f}%"            cv2.rectangle(frame, (startX, startY), (endX, endY),                          self.COLORS[idx], 2)            y = startY - 10 if startY - 10 > 10 else startX + 20            cv2.putText(frame, label, (startX, y),                        cv2.FONT_HERSHEY_SIMPLEX, 0.55,                        self.COLORS[idx], 2)        return frame, vehicle_count# ----------------------------------------------------------if __name__ == "__main__":    ap = argparse.ArgumentParser()    ap.add_argument("-p", "--prototxt", required=True)    ap.add_argument("-m", "--model", required=True)    ap.add_argument("-c", "--confidence", type=float, default=0.4)    ap.add_argument("-v", "--video",                    default="C:\\Users\\Mishanya\\PycharmProjects\\ComputerVision_labs\\Lab6\\Video_cars.mp4")    args = vars(ap.parse_args())    detector = VehicleDetector(args["prototxt"], args["model"], args["confidence"])    source = 0 if args["video"] == "0" else args["video"]    cap = cv2.VideoCapture(source)    if not cap.isOpened():        print("[ERROR] Не вдалося відкрити відеоджерело:", source)        sys.exit(1)    prev = time.time()    while True:        ret, frame = cap.read()        if not ret:            print("[INFO] Кінець відео.")            break        frame = imutils.resize(frame, width=900)        frame, count = detector.detect(frame)        now = time.time()        fps = 1 / (now - prev)        prev = now        cv2.putText(frame, f"Vehicles: {count}", (20, 30),                    cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)        cv2.putText(frame, f"FPS: {fps:.2f}", (20, 60),                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 255), 2)        cv2.imshow("Vehicle Hierarchical Detection", frame)        if cv2.waitKey(1) & 0xFF == ord("q"):            break    cap.release()    cv2.destroyAllWindows()
+# -------------------------------------------------------------
+# Lab_6_condition1.py.py
+# Ієрархічна ідентифікація транспортних засобів у відеопотоці
+# -------------------------------------------------------------
+
+import cv2
+import numpy as np
+import imutils
+import time
+import argparse
+import sys
+
+
+class VehicleDetector:
+    """
+    Ієрархічна модель класифікації:
+    1) Детекція всіх об’єктів (MobileNetSSD)
+    2) Виділення транспортних (car, bus, motorbike, train)
+    3) Вторинна класифікація:
+        - Легкові (car, motorbike)
+        - Важкі (bus, train)
+    """
+
+    def __init__(self, prototxt_path, model_path, conf_threshold=0.4):
+
+        # Моделі класів MobileNetSSD
+        self.CLASSES = [
+            "background",
+            "aeroplane",
+            "bicycle",
+            "bird",
+            "boat",
+            "bottle",
+            "bus",
+            "car",
+            "cat",
+            "chair",
+            "cow",
+            "diningtable",
+            "dog",
+            "horse",
+            "motorbike",
+            "person",
+            "pottedplant",
+            "sheep",
+            "sofa",
+            "train",
+            "tvmonitor",
+        ]
+
+        # транспортні
+        self.VEHICLE_CLASSES = {"car", "bus", "motorbike", "train"}
+
+        # уточнена класифікація
+        self.HEAVY = {"bus", "train"}
+        self.LIGHT = {"car", "motorbike"}
+
+        # Постійні кольори
+        np.random.seed(42)
+        self.COLORS = np.random.uniform(0, 255, size=(len(self.CLASSES), 3))
+
+        # Завантаження нейромережі
+        self.net = cv2.dnn.readNetFromCaffe(prototxt_path, model_path)
+
+        self.net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
+        self.net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
+
+        self.conf_threshold = conf_threshold
+        self.input_size = (400, 400)
+
+    # ----------------------------------------------------------
+    def classify_level3(self, class_name):
+        """Підкласифікація транспортних засобів"""
+        if class_name in self.HEAVY:
+            return "Heavy vehicle"
+        if class_name in self.LIGHT:
+            return "Light vehicle"
+        return "Vehicle"
+
+    # ----------------------------------------------------------
+    def detect(self, frame):
+        """Головний метод детекції та ієрархічної класифікації"""
+
+        (h, w) = frame.shape[:2]
+
+        blob = cv2.dnn.blobFromImage(
+            cv2.resize(frame, self.input_size), 0.007843, self.input_size, 127.5
+        )
+
+        self.net.setInput(blob)
+        detections = self.net.forward()
+
+        vehicle_count = 0
+
+        for i in range(detections.shape[2]):
+            confidence = detections[0, 0, i, 2]
+
+            if confidence < self.conf_threshold:
+                continue
+
+            idx = int(detections[0, 0, i, 1])
+            class_name = self.CLASSES[idx]
+
+            # Тільки транспортні
+            if class_name not in self.VEHICLE_CLASSES:
+                continue
+
+            vehicle_count += 1
+
+            vehicle_type = self.classify_level3(class_name)
+
+            box = detections[0, 0, i, 3:7] * np.array([w, h, w, h])
+            (startX, startY, endX, endY) = box.astype("int")
+
+            label = f"{vehicle_type} ({class_name}) {confidence * 100:.1f}%"
+
+            cv2.rectangle(frame, (startX, startY), (endX, endY), self.COLORS[idx], 2)
+
+            y = startY - 10 if startY - 10 > 10 else startX + 20
+            cv2.putText(
+                frame,
+                label,
+                (startX, y),
+                cv2.FONT_HERSHEY_SIMPLEX,
+                0.55,
+                self.COLORS[idx],
+                2,
+            )
+
+        return frame, vehicle_count
+
+
+# ----------------------------------------------------------
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser()
+    ap.add_argument("-p", "--prototxt", required=True)
+    ap.add_argument("-m", "--model", required=True)
+    ap.add_argument("-c", "--confidence", type=float, default=0.4)
+    ap.add_argument(
+        "-v",
+        "--video",
+        default="C:\\Users\\Mishanya\\PycharmProjects\\ComputerVision_labs\\Lab6\\Video_cars.mp4",
+    )
+    args = vars(ap.parse_args())
+
+    detector = VehicleDetector(args["prototxt"], args["model"], args["confidence"])
+
+    source = 0 if args["video"] == "0" else args["video"]
+    cap = cv2.VideoCapture(source)
+
+    if not cap.isOpened():
+        print("[ERROR] Не вдалося відкрити відеоджерело:", source)
+        sys.exit(1)
+
+    prev = time.time()
+
+    while True:
+        ret, frame = cap.read()
+        if not ret:
+            print("[INFO] Кінець відео.")
+            break
+
+        frame = imutils.resize(frame, width=900)
+
+        frame, count = detector.detect(frame)
+
+        now = time.time()
+        fps = 1 / (now - prev)
+        prev = now
+
+        cv2.putText(
+            frame,
+            f"Vehicles: {count}",
+            (20, 30),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            0.8,
+            (0, 255, 0),
+            2,
+        )
+
+        cv2.putText(
+            frame,
+            f"FPS: {fps:.2f}",
+            (20, 60),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            0.7,
+            (0, 255, 255),
+            2,
+        )
+
+        cv2.imshow("Vehicle Hierarchical Detection", frame)
+
+        if cv2.waitKey(1) & 0xFF == ord("q"):
+            break
+
+    cap.release()
+    cv2.destroyAllWindows()
