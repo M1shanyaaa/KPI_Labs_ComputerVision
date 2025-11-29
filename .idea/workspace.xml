@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e938bc6b-e22e-4129-9f6f-f48d20928803" name="Changes" comment="Lab6">
-      <change afterPath="$PROJECT_DIR$/Lab6/Lab_6_condition1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab6/Lab_6_condition2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab6/MobileNetSSD_deploy.caffemodel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab6/MobileNetSSD_deploy.prototxt.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab6/Video_cars.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab6/Video_cars_and_people.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab6/Video_cars_people.mp4" afterDir="false" />
+    <list default="true" id="e938bc6b-e22e-4129-9f6f-f48d20928803" name="Changes" comment="Lab6 (formated)">
+      <change afterPath="$PROJECT_DIR$/Lab7/Lab_7_condition2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab7/video_security_camera.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab7/video_security_camera2.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +51,7 @@
     "Python.Lab_5_condition_2.executor": "Run",
     "Python.Lab_6.executor": "Run",
     "Python.Lab_6_condition2.executor": "Run",
+    "Python.Lab_7_condition2.executor": "Run",
     "Python.Main.executor": "Run",
     "Python.Main2.executor": "Run",
     "Python.PIL_example.executor": "Run",
@@ -97,11 +94,11 @@
       <recent name="C:\Users\Mishanya\PycharmProjects\ComputerVision_labs\Lab3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mishanya\PycharmProjects\ComputerVision_labs\Lab7" />
       <recent name="C:\Users\Mishanya\PycharmProjects\ComputerVision_labs\Lab6" />
       <recent name="C:\Users\Mishanya\PycharmProjects\ComputerVision_labs\Lab5" />
       <recent name="C:\Users\Mishanya\PycharmProjects\ComputerVision_labs\Lab4" />
       <recent name="C:\Users\Mishanya\PycharmProjects\ComputerVision_labs\Lab2" />
-      <recent name="C:\Users\Mishanya\PycharmProjects\ComputerVision_labs\Lab_work_2\Lab_work_2\Image_Recognition" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -156,7 +153,9 @@
       <workItem from="1763542770520" duration="55000" />
       <workItem from="1763543373322" duration="5637000" />
       <workItem from="1763708514105" duration="13000" />
-      <workItem from="1763882588019" duration="3530000" />
+      <workItem from="1763882588019" duration="5167000" />
+      <workItem from="1763898803326" duration="122000" />
+      <workItem from="1764410028120" duration="4932000" />
     </task>
     <task id="LOCAL-00001" summary="Lab1-start">
       <option name="closed" value="true" />
@@ -246,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763886262855</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Lab6 (formated)">
+      <option name="closed" value="true" />
+      <created>1763886311707</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1763886311707</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +282,8 @@
     <MESSAGE value="Lab 3, 4, 5 (formated)" />
     <MESSAGE value="MKR task_11 done" />
     <MESSAGE value="Lab6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab6" />
+    <MESSAGE value="Lab6 (formated)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab6 (formated)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -291,8 +299,8 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ComputerVision_labs$Lab_3.coverage" NAME="Lab_3 Coverage Results" MODIFIED="1761914329827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab3" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$Lab2v3.coverage" NAME="Lab2v3 Coverage Results" MODIFIED="1760437130130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab2" />
-    <SUITE FILE_PATH="coverage/ComputerVision_labs$message.coverage" NAME="message Coverage Results" MODIFIED="1760437509350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab2" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$im_segment.coverage" NAME="im_segment Coverage Results" MODIFIED="1761738780940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab5/Lab_work_5/Lab_work_5/im_segment" />
+    <SUITE FILE_PATH="coverage/ComputerVision_labs$message.coverage" NAME="message Coverage Results" MODIFIED="1760437509350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab2" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$Image_recognition.coverage" NAME="Image_recognition Coverage Results" MODIFIED="1761738854165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab5/Lab_work_5/Lab_work_5/Image_rec_classification" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$frame_diff.coverage" NAME="frame_diff Coverage Results" MODIFIED="1761559966431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab4/Lab_work_4/Lab_work_4/Descriptors_tracking" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$background_subtraction.coverage" NAME="background_subtraction Coverage Results" MODIFIED="1761559991999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab4/Lab_work_4/Lab_work_4/Descriptors_tracking" />
@@ -306,6 +314,7 @@
     <SUITE FILE_PATH="coverage/ComputerVision_labs$my_code.coverage" NAME="my_code Coverage Results" MODIFIED="1757073404432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Labs" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$Lab_4.coverage" NAME="Lab_4 Coverage Results" MODIFIED="1761914151740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab4" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$gabor_filter.coverage" NAME="gabor_filter Coverage Results" MODIFIED="1760421425114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab_work_2/Lab_work_2/Image_Vectorization" />
+    <SUITE FILE_PATH="coverage/ComputerVision_labs$Lab_7_condition2.coverage" NAME="Lab_7_condition2 Coverage Results" MODIFIED="1764415465685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab7" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$Lab_5_condition_2.coverage" NAME="Lab_5_condition_2 Coverage Results" MODIFIED="1761914099671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab5" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$Real_time_object_detection.coverage" NAME="Real_time_object_detection Coverage Results" MODIFIED="1763882597795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab6/Lab_work_6/Lab_work_6" />
     <SUITE FILE_PATH="coverage/ComputerVision_labs$Im_quality_enhanc.coverage" NAME="Im_quality enhanc Coverage Results" MODIFIED="1758101187811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lab_work_2/Lab_work_2/Image_Processing" />
